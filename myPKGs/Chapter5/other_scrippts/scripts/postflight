@@ -1,0 +1,14 @@
+#!/bin/bash
+
+striptName=$(basename $0)
+logger -i "scripts start ($striptName):"
+
+argv=0
+logger -i " arguments[$argv]: [$0]"
+while [ "$1" != "" ]; do
+	argv=$((argv+1))
+	logger -i " arguments[$argv]: [$1]"
+	shift
+done
+logger -i "scripts complete ($striptName)."
+exit 0

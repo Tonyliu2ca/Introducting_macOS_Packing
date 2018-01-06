@@ -1,0 +1,14 @@
+#!/bin/bash
+
+target="$3"
+homeDir=$(dirname "$0")
+
+if [ "$target" = "/" ]; then
+	for eachFile in "$homeDir"/*.mobileconfig; do
+		profile -I -F "$eachFile"
+	done
+else
+	cp "$homeDir/*.mobileconfig" /private/var/db/ConfigurationProfiles/Setup/
+	rm /private/var/db/ConfigurationProfiles/Setup/.profileSetupDone
+fi
+exit 0

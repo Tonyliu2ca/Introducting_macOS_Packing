@@ -1,0 +1,4 @@
+#!/bin/bash
+pkgutil --pkgs=lts.ApplePi.rmEtreCheck && pkgutil --forget lts.ApplePi.rmEtreCheck;
+rm -r /Applications/Utilities/EtreCheck.app
+exit 0

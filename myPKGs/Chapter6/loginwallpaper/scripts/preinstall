@@ -1,0 +1,5 @@
+#!/bin/bash
+if ! [ -f "$3/Library/Caches/com.apple.desktop.admin-org.png" ]; then
+mv "$3/Library/Caches/com.apple.desktop.admin.png" \ "$3/Library/Caches/com.apple.desktop.admin-org.png"
+fi
+exit 0

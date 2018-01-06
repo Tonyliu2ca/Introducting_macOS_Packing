@@ -1,0 +1,21 @@
+#!/bin/bash
+
+striptName=$(basename $0)
+logger -i "[installDockutil] scripts start ($striptName):"
+
+argc=0
+logger -i " [installDockutil] arguments[$argc]: [$0]"
+while [ "$1" != "" ]; do
+	argc=$((argc+1))
+	logger -i " [installDockutil] arguments[$argc]: [$1]"
+	shift
+done
+
+targetRoot="$3"
+if [ "$targetRoot" = "/" ]; then
+	echo " [installDockutil] installed on / as target root."
+fi
+
+logger -i " [installDockutil] Env: $(printenv)"
+logger -i "[installDockutil] scripts complete ($striptName)."
+exit 0

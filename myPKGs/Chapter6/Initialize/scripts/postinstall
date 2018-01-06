@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# 设置系统时间同步服务：
+systemsetup -setnetworktimeserver time.asia.apple.com
+systemsetup -setusingnetworktime on
+
+# 设置时区
+systemsetup -settimezone Aisia/Shanghai
+
+# 设置启动卷宗
+systemsetup -setstartupdisk /
+
+# 开启苹果的远程桌面服务
+kickstarter=/System/Library/CoreServices/RemoteManagement/ARDAgent.app\
+/Contents/Resources/kickstart
+"$kickstarter" -deactivate -configure -access -off
+"$kickstarter" -activate -configure -access -on -privs -all -users sysaccount
+"$kickstarter" -configure -allowAccessFor -specifiedUsers
+
+# 设置电脑信息
+"$kickstarter" -configure -computerinfo -set1 -1 "刘铁松“ \
+-set2 -2 "IT信息管理" -set3 -3 "北京" -set4 -4 "$date"
+
+exit 0
