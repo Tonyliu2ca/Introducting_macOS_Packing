@@ -782,7 +782,7 @@
 				<key>FOLLOW_SYMBOLIC_LINKS</key>
 				<false/>
 				<key>IDENTIFIER</key>
-				<string>lts.ApplePi.chapter6.InstallApps</string>
+				<string>lts.ApplePai.chapter6.InstallApps</string>
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
@@ -1265,7 +1265,7 @@
 				<key>FOLLOW_SYMBOLIC_LINKS</key>
 				<false/>
 				<key>IDENTIFIER</key>
-				<string>lts.ApplePi.chapter6.LoginWallpaper</string>
+				<string>lts.ApplePai.chapter6.LoginWallpaper</string>
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
@@ -1765,7 +1765,7 @@
 				<key>FOLLOW_SYMBOLIC_LINKS</key>
 				<false/>
 				<key>IDENTIFIER</key>
-				<string>lts.ApplePi.chapter6.Profile</string>
+				<string>lts.ApplePai.chapter6.Profile</string>
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
@@ -2232,7 +2232,7 @@
 				<key>FOLLOW_SYMBOLIC_LINKS</key>
 				<false/>
 				<key>IDENTIFIER</key>
-				<string>lts.ApplePi.chapter6.Initialize</string>
+				<string>lts.ApplePai.chapter6.Initialize</string>
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>

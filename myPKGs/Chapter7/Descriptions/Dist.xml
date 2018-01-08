@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="1">
+    <title>显示定制的产品包</title>
+    <background file="background.png" mime-type="image/png" scaling="tofit" alignment="bottomleft"/>
+    <welcome file="welcome.txt" mime-type="text/plain"/>
+    <readme file="readme.txt" mime-type="text/plain"/>
+    <license file="license.txt" mime-type="text/plain"/>
+
+    <options customize="all" require-scripts="false"/>
+    <choices-outline>
+        <line choice="lts.ApplePai.EtreCheck"/>
+    </choices-outline>
+    <choice id="lts.ApplePai.EtreCheck" visible="false">
+        <pkg-ref id="lts.ApplePai.EtreCheck">
+			<must-close> <app id="com.etresoft.EtreCheck"/> </must-close>
+		</pkg-ref>
+    </choice>
+    <pkg-ref id="lts.ApplePai.EtreCheck" version="0" onConclusion="none">EtreCheck.pkg</pkg-ref>
+	<volume-check>
+		<allowed-os-versions>
+			<os-version min="10.6" before="10.6.5"/>
+		</allowed-os-versions>
+	</volume-check>
+</installer-gui-script>

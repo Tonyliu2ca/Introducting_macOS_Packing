@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="1">
+    <options customize="always" require-scripts="false"/>
+    <choices-outline>
+        <line choice="lts.ApplePai.initialize"/>
+        <line choice="lts.ApplePai.loginwallpaper"/>
+        <line choice="lts.ApplePai.profiles"/>
+    </choices-outline>
+
+    <pkg-ref id="lts.ApplePai.initialize" version="1.0" onConclusion="none">initialize-1.0.pkg</pkg-ref>
+    <pkg-ref id="lts.ApplePai.loginwallpaper" version="1.0" onConclusion="none">loginwallpaper-1.0.pkg</pkg-ref>
+    <pkg-ref id="lts.ApplePai.profiles" version="1.0" onConclusion="none">profiles-1.0.pkg</pkg-ref>
+
+    <choice id="lts.ApplePai.initialize" visible="true" title="Initialize" description="变更系统设置">
+        <pkg-ref id="lts.ApplePai.initialize"/>		
+    </choice>
+    <choice id="lts.ApplePai.loginwallpaper" visible="true" title="LoginWallpaper" description="设置登录背景">
+        <pkg-ref id="lts.ApplePai.loginwallpaper"/>
+    </choice>
+    <choice id="lts.ApplePai.profiles" visible="true" title="Profile" description="安装用户描述文件">
+        <pkg-ref id="lts.ApplePai.profiles"/>
+    </choice>
+</installer-gui-script>

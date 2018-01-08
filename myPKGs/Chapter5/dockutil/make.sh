@@ -13,7 +13,7 @@ if [ -d "$projectHome" ]; then
 	/usr/sbin/chown root:admin "$projectHome/root/bin/dockutil"
 	/bin/chmod -R a+x "$projectHome/scripts"
 	/usr/bin/pkgbuild --root root --install-location "/usr/local" \
-		--scripts scripts --identifier "lts.ApplePi.$pkgName" \
+		--scripts scripts --identifier "lts.ApplePai.$pkgName" \
 		--version $pkgVersion  --ownership recommended \
 		--quiet "$pkgName-$pkgVersion.pkg"
 	exit 0

@@ -11,7 +11,7 @@ if [ -d "$projectHome" ]; then
 	/bin/chmod a+r "$projectHome/Caches/com.apple.desktop.admin.png"
 	/usr/sbin/chown root:admin "$projectHome/Caches/com.apple.desktop.admin.png"
 	/usr/bin/pkgbuild --root Caches --install-location "/Library/Caches" \
-		--scripts scripts --identifier "lts.ApplePi.$pkgName" --version $pkgVersion \
+		--scripts scripts --identifier "lts.ApplePai.$pkgName" --version $pkgVersion \
 	    --ownership recommended --quiet "$pkgName-$pkgVersion.pkg"
 	exit 0
 else
